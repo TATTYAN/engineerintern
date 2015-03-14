@@ -1,0 +1,85 @@
+<?java
+/*＊すべて、コンソールアプリケーションで作成する
+文字コードによって長さが変わってしまうので注意   $len = mb_strlen($box,"SJIS");
+*改行しない画面出力は、
+System.out.print("文字列");
+改行だけの画面出力は、
+System.out.println("");
+[練習問題１]*/
+for(int i=0;i<10;i++){
+    String  temp ="";
+    for(int j=0;j<i;j++){
+        temp += "";
+    }
+    System.out.println(temp+"ABCDEF");
+}
+?>
+<?java
+/*
+1~100までカウントしてその数が３で割り切れるならば数字の代わりにFizzと表示する
+その数が5で割り切れるならば数字の代わりにBuzzと表示する
+3でも５でもあり切れる場合、FizzBuzzと表示するそれ以外は数字を表示するプログラムを書け
+*/
+for(int i=1;i<=100;i++){
+	if(i%15 ==00){
+		SYstem.out.println("FizzBuzz");
+	}
+	else if(i%3 == 0){
+		System.put.println("Fizz");
+	}
+	else if(i%5 == 0){
+		System.out.println("Buzz");
+	}
+	else{
+		System.out.println(i);
+	}
+}
+?>
+
+<?java
+/*大小比較
+3つの整数を用意して、1番大きい数値を表示するプログラムを作成する。
+*/
+
+int a =10;
+int b =30;
+int c =50;
+
+if(c>a){
+	a=b;
+}
+if(c>b){
+	b=c;
+}
+System.out.println("最大値は"+c);
+?>
+
+<?java
+/*??円の買い物をして1万円札を出した時の
+おつりの札と硬貨の枚数を求めるプログラムを作成してください。
+*/
+int purchase = 2327;
+int payment  = 10000;
+
+payment-=purchase;
+System.out.println("500円札は"+(payment/5000)+"枚");
+payment %=5000;
+System.out.println("1000円札は"+(payment/1000)+"枚");
+payment %=1000;
+System.out.println("500円玉は"+(payment/500)+"枚");
+?>
+
+<?java
+class Dog
+{
+	private String Name;
+	public void setName(STring n){
+		Name = h;
+	}
+	public void showProfile(){
+		System.out.println("名前は、"+Name+"です");
+	}
+
+Dog myDog = new Dog();
+myDog.setName("たろう");
+myDog.showProfile();
